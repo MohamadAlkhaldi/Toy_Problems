@@ -3,7 +3,7 @@
 // 	Ouput :: "Position of alphabet: 1"
 	function characPosit(character){
 		var str = 'abcdefghijklmnopqrstuvwxyz'
-		return 'position in alphabet: ' + str.indexOf(character)
+		return 'position in alphabet: ' + (str.indexOf(character)+1)
 	}
 
 // Write a function called repeatStr which repeats the given
