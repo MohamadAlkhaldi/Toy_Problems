@@ -7,6 +7,12 @@
 
 	function nextItem(items, elem){
 		//your code is here
+
+		var i = items.indexOf(elem)
+		if(elem >= items.length-1)
+			return null
+		return items[i+1]
+
 	}
 
 //  We need a function that can transform a number into a string.
@@ -14,6 +20,15 @@
 // 	numberToString(123); // returns '123';`   
 // 	numberToString(999); // returns '999';`
 
+//way 1
 	function numberToString(num) {
 	  //your code is here
+	  return '' + num
 	}
+
+//way 2
+	function numberToString2(num) {
+		return num.toString()
+	}
+
+
